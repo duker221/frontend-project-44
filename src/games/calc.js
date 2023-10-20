@@ -12,6 +12,7 @@ const randomCalc = (randomExpression, operandA, operandB) => {
   } if (randomExpression === '*') {
     return operandA * operandB;
   }
+  return null;
 };
 
 const createGameData = () => {

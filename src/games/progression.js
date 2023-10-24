@@ -26,7 +26,7 @@ const createGameData = () => {
 
   progression[hiddenIndex] = '..';
 
-  const question = progression;
+  const question = progression.join(' ');
   const answer = hiddenValue.toString();
   const gameData = [question, answer];
   return gameData;

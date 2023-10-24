@@ -12,7 +12,7 @@ const mainEngine = (question, createGameData) => {
 
   const roundStart = (count) => {
     if (count === roundCount) {
-      console.log(`Congratulations ${userName}!`);
+      console.log(`Congratulations, ${userName}!`);
       return true;
     }
 

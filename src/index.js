@@ -17,7 +17,7 @@ const mainEngine = (question, createGameData) => {
     }
 
     const roundData = createGameData();
-    console.log(`Questions: ${roundData[0]}`);
+    console.log(`Question: ${roundData[0]}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     const result = roundData[1] === userAnswer;

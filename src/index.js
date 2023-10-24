@@ -22,7 +22,7 @@ const mainEngine = (question, createGameData) => {
 
     const result = roundData[1] === userAnswer;
     if (!result) {
-      console.log(`${userAnswer} is wrong answer :(. Correct answer is "${roundData[1]}".`);
+      console.log(`"${userAnswer}" is wrong answer :(. Correct answer is "${roundData[1]}".`);
       console.log(`Let's try again ${userName}`);
       return false;
     }

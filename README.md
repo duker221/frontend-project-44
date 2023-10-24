@@ -42,7 +42,7 @@ At the moment, there are 5 games available.
 
 **What number is missing in the progression?**
 
-
+ 
 
 ## Brain-prime
 

@@ -11,6 +11,7 @@ At the moment, there are 5 games available.
 
 1.brain-even
 
+![](/asciinema/brain-evenAsciinema.gif)
 2.brain-calc
 
 3.brain-gcd
@@ -22,7 +23,7 @@ At the moment, there are 5 games available.
 ##  Brain-even
 
 **You need to determine whether the number is even or odd.**
-
+[](https://gifyu.com/image/S82op)
 
 
 ## Brain-calc

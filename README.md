@@ -11,7 +11,6 @@ At the moment, there are 5 games available.
 
 1.brain-even
 
-![](/asciinema/brain-evenAsciinema.gif)
 2.brain-calc
 
 3.brain-gcd
@@ -23,18 +22,22 @@ At the moment, there are 5 games available.
 ##  Brain-even
 
 **You need to determine whether the number is even or odd.**
-[](https://gifyu.com/image/S82op)
+
+![](/asciinema/brain-even-Asciinema.gif)
 
 
 ## Brain-calc
 
 **What is the result of the expression?**
 
+![](/asciinema/brain-calc-Asciinema.gif)
 
 
 ## Brain-gcd
 
 **Find the greatest common divisor of given numbers.**
+
+![](/asciinema/brain-gcd-Asciinema.gif)
 
 
 
@@ -42,11 +45,15 @@ At the moment, there are 5 games available.
 
 **What number is missing in the progression?**
 
- 
+![](/asciinema/brain-progression-Asciinema.gif)
+
+
 
 ## Brain-prime
 
 **Is the number prime?**
+
+![](/asciinema/brain-prime-Asciinema.gif)
 
 
 
@@ -65,3 +72,5 @@ At the moment, there are 5 games available.
     $ make publish
 
     $ npm link
+
+    good luck and have fun :)

@@ -1,6 +1,6 @@
 import mainEngine from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
 
@@ -16,8 +16,8 @@ const commonDivisor = (numberA, numberB) => {
 };
 
 const createGameData = () => {
-  const numberA = getRandomInt(100);
-  const numberB = getRandomInt(100);
+  const numberA = getRandomNumber(0, 100);
+  const numberB = getRandomNumber(0, 100);
 
   const question = `${numberA} ${numberB}`;
 

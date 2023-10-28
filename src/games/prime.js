@@ -1,6 +1,6 @@
 import mainEngine from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 const numberIsPrime = (number) => {
   if (number === 1) {
@@ -16,7 +16,7 @@ const numberIsPrime = (number) => {
 };
 
 const createGameData = () => {
-  const question = getRandomInt(200);
+  const question = getRandomNumber(0, 200);
   const answer = numberIsPrime(question) ? 'yes' : 'no';
 
   const gameData = [question, answer];

@@ -4,6 +4,10 @@ import getRandomNumber from '../utils.js';
 const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
 
 const commonDivisor = (numberA, numberB) => {
+  if (numberA === 0 || numberB === 0) {
+    return [1];
+  }
+
   const arr = [];
 
   for (let i = 1; i < numberA; i += 1) {

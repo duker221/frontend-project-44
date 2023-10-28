@@ -1,7 +1,6 @@
 import mainEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-
 const numberIsPrime = (number) => {
   if (number === 1) {
     return false;

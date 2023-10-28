@@ -10,8 +10,8 @@ const mainEngine = (discriptions, createGameData) => {
 
   const roundCount = 3;
 
-  for (let i = 0; i < roundCount; i++) {              //Переделал на цикл
-    const [question, answer] = createGameData();      //Сразу деструктуризировал массив
+  for (let i = 0; i < roundCount; i += 1) { //  Переделал на цикл
+    const [question, answer] = createGameData(); //  Сразу деструктуризировал массив
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -22,10 +22,9 @@ const mainEngine = (discriptions, createGameData) => {
       console.log(`"${userAnswer}" is wrong answer :(. Correct answer is "${answer}".`);
       console.log(`Let's try again, ${userName}!`);
       return false;
-    };
-  };
+    }
+  }
   console.log(`Congratulations, ${userName}!`);
-  return;
 };
 
 export default mainEngine;

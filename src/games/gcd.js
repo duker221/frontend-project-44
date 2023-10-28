@@ -1,7 +1,6 @@
 import mainEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-
 const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
 
 const commonDivisor = (numberA, numberB) => {

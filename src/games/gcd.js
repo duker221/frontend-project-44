@@ -20,7 +20,7 @@ const createGameData = () => {
 
   const question = `${numberA} ${numberB}`;
 
-  const answer = getMaxOfArray(commonDivisor(numberA, numberB));
+  const answer = String(getMaxOfArray(commonDivisor(numberA, numberB)));
 
   const gameData = [question, String(answer)];
   return gameData;

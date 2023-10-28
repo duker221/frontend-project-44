@@ -1,8 +1,5 @@
 import mainEngine from '../index.js';
-
-function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+import getRandomNumber from '../utils.js';
 
 const generateProgression = (start, step, maxLength) => {
   const result = [];
@@ -16,9 +13,9 @@ const generateProgression = (start, step, maxLength) => {
 };
 
 const createGameData = () => {
-  const start = getRandomArbitrary(1, 60);
-  const step = getRandomArbitrary(2, 5);
-  const maxLength = getRandomArbitrary(5, 11);
+  const start = getRandomNumber(1, 60);
+  const step = getRandomNumber(2, 5);
+  const maxLength = getRandomNumber(5, 11);
   const progression = generateProgression(start, step, maxLength);
 
   const hiddenIndex = getRandomArbitrary(0, maxLength - 1);

@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/duker221/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/duker221/frontend-project-44/actions)",
+  "description": "Brain-game is my first project in Hexlet. This is console maths game.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

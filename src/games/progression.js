@@ -18,7 +18,7 @@ const createGameData = () => {
   const maxLength = getRandomNumber(5, 11);
   const progression = generateProgression(start, step, maxLength);
 
-  const hiddenIndex = getRandomArbitrary(0, maxLength - 1);
+  const hiddenIndex = getRandomNumber(0, maxLength - 1);
   const hiddenValue = progression[hiddenIndex];
 
   progression[hiddenIndex] = '..';

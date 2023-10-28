@@ -21,39 +21,46 @@ At the moment, there are 5 games available.
 
 ##  Brain-even
 
+
 **You need to determine whether the number is even or odd.**
 
-![](/asciinema/brain-even-Asciinema.gif)
 
+[![asciicast](https://asciinema.org/a/H7hld2UpqHvaULB9TxRVgjjmy.svg)](https://asciinema.org/a/H7hld2UpqHvaULB9TxRVgjjmy)
 
 ## Brain-calc
 
+
 **What is the result of the expression?**
 
-![](/asciinema/brain-calc-Asciinema.gif)
+
+[![asciicast](https://asciinema.org/a/9XpOY5bwLtdycY3ID2rYF6Ret.svg)](https://asciinema.org/a/9XpOY5bwLtdycY3ID2rYF6Ret)
 
 
 ## Brain-gcd
 
+
 **Find the greatest common divisor of given numbers.**
 
-![](/asciinema/brain-gcd-Asciinema.gif)
 
-
+[![asciicast](https://asciinema.org/a/kJ0j2TrmPyw9gbbq0lH1c7ti8.svg)](https://asciinema.org/a/kJ0j2TrmPyw9gbbq0lH1c7ti8)
 
 ## Brain-progression
 
+
 **What number is missing in the progression?**
 
-![](/asciinema/brain-progression-Asciinema.gif)
+
+[![asciicast](https://asciinema.org/a/twbsl77qqJMSHxW9KXd5QpTdA.svg)](https://asciinema.org/a/twbsl77qqJMSHxW9KXd5QpTdA)
 
 
 
 ## Brain-prime
 
+
 **Is the number prime?**
 
-![](/asciinema/brain-prime-Asciinema.gif)
+
+[![asciicast](https://asciinema.org/a/nnLpPBIh5uJluvbYE7JSh7DSV.svg)](https://asciinema.org/a/nnLpPBIh5uJluvbYE7JSh7DSV)
 
 
 
@@ -61,7 +68,7 @@ At the moment, there are 5 games available.
 
 + **Clone [this repository](https://github.com/duker221/frontend-project-44)**
 + **Install [Node version manager](https://github.com/nvm-sh/nvm#install--update-script)**
-+ **Install [Node js](https://nodejs.org/en)**
++ **Install [Node js v20.8.0.](https://nodejs.org/en)** 
 
 
 

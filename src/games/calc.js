@@ -1,10 +1,9 @@
 import mainEngine from '../index.js';
+import getRandomNumber from '../utils.js'
 
 const operators = ['+', '-', '*'];
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
-
-const randomCalc = (randomExpression, operandA, operandB) => {
+const calculateExpression = (randomExpression, operandA, operandB) => {
   if (randomExpression === '+') {
     return operandA + operandB;
   } if (randomExpression === '-') {
@@ -16,12 +15,12 @@ const randomCalc = (randomExpression, operandA, operandB) => {
 };
 
 const createGameData = () => {
-  const randomExpression = operators[getRandomInt(3)];
-  const randomOperandA = getRandomInt(50);
-  const randomOperandB = getRandomInt(50);
+  const randomExpression = operators[getRandomNumber(0, 3)];
+  const randomOperandA = getRandomNumber(0, 50);
+  const randomOperandB = getRandomNumber(0, 50);
 
   const question = `${randomOperandA} ${randomExpression} ${randomOperandB}`;
-  const answer = randomCalc(randomExpression, randomOperandA, randomOperandB);
+  const answer = calculateExpression(randomExpression, randomOperandA, randomOperandB);
   const gameData = [question, String(answer)];
   return gameData;
 };

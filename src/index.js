@@ -10,8 +10,8 @@ const mainEngine = (discriptions, createGameData) => {
 
   const roundCount = 3;
 
-  for (let i = 0; i < roundCount; i += 1) { //  Переделал на цикл
-    const [question, answer] = createGameData(); //  Сразу деструктуризировал массив
+  for (let i = 0; i < roundCount; i += 1) {
+    const [question, answer] = createGameData();
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');

@@ -7,15 +7,12 @@ const calculateExpression = (randomExpression, operandA, operandB) => {
   switch (randomExpression) {
     case '+':
       return operandA + operandB;
-      break;
     case '-':
       return operandA - operandB;
-      break;
     case '*':
       return operandA * operandB;
-      break;
     default:
-      throw new Error(`Unknown expression: '${randomExpression}'!`);
+      return null;
   }
 };
 

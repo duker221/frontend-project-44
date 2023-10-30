@@ -4,19 +4,18 @@ import getRandomNumber from '../utils.js';
 const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
 
 const commonDivisor = (numberA, numberB) => {
-  numberA = Math.abs(numberA);
-  numberB = Math.abs(numberB);
+  const absoluteA = Math.abs(numberA);
+  const absoluteB = Math.abs(numberB);
 
-  if (numberA === 0 || numberB === 0) {
+  if (absoluteA === 0 || absoluteB === 0) {
     return [1];
   }
 
-  const cycleLength = Math.max(numberA, numberB);
+  const cycleLength = Math.max(absoluteA, absoluteB);
 
   const arr = [];
-
   for (let i = 1; i <= cycleLength; i += 1) {
-    if (numberA % i === 0 && numberB % i === 0) {
+    if (absoluteA % i === 0 && absoluteB % i === 0) {
       arr.push(i);
     }
   }

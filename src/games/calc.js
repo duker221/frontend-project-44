@@ -4,11 +4,11 @@ import getRandomNumber from '../utils.js';
 const operators = ['+', '-', '*'];
 
 const calculateExpression = (randomExpression, operandA, operandB) => {
-  switch(randomExpression) {
+  switch (randomExpression) {
     case '+':
       return operandA + operandB;
       break;
-    case '-': 
+    case '-':
       return operandA - operandB;
       break;
     case '*':
@@ -16,7 +16,7 @@ const calculateExpression = (randomExpression, operandA, operandB) => {
       break;
     default:
       throw new Error(`Unknown expression: '${randomExpression}'!`);
-  };
+  }
 };
 
 const createGameData = () => {

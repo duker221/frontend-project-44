@@ -14,7 +14,7 @@ const commonDivisor = (numberA, numberB) => {
   const cycleLength = Math.max(numberA, numberB);
 
   const arr = [];
-  
+
   for (let i = 1; i <= cycleLength; i += 1) {
     if (numberA % i === 0 && numberB % i === 0) {
       arr.push(i);
@@ -27,7 +27,7 @@ const createGameData = () => {
   const numberA = getRandomNumber(0, 100);
   const numberB = getRandomNumber(0, 100);
 
-  const question = `${numberA}, ${numberB}`;
+  const question = `${numberA} ${numberB}`;
 
   const answer = String((commonDivisor(numberA, numberB)));
 

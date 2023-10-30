@@ -2,7 +2,7 @@ import mainEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const numberIsPrime = (number) => {
-  if (number === 1) {
+  if (number === 1 || number === 0) {
     return false;
   } if (number > 1) {
     for (let i = 2; i < number; i += 1) {

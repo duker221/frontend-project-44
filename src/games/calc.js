@@ -4,14 +4,19 @@ import getRandomNumber from '../utils.js';
 const operators = ['+', '-', '*'];
 
 const calculateExpression = (randomExpression, operandA, operandB) => {
-  if (randomExpression === '+') {
-    return operandA + operandB;
-  } if (randomExpression === '-') {
-    return operandA - operandB;
-  } if (randomExpression === '*') {
-    return operandA * operandB;
-  }
-  return null;
+  switch(randomExpression) {
+    case '+':
+      return operandA + operandB;
+      break;
+    case '-': 
+      return operandA - operandB;
+      break;
+    case '*':
+      return operandA * operandB;
+      break;
+    default:
+      throw new Error(`Unknown expression: '${randomExpression}'!`);
+  };
 };
 
 const createGameData = () => {

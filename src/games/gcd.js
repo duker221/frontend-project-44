@@ -1,25 +1,17 @@
-import mainEngine from '../index.js';
+import createGameEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const getMaxOfArray = (numArray) => Math.max.apply(null, numArray);
+const gcdNumber = (numberA, numberB) => {
+  let absoluteA = Math.abs(numberA);
+  let absoluteB = Math.abs(numberB);
 
-const commonDivisor = (numberA, numberB) => {
-  const absoluteA = Math.abs(numberA);
-  const absoluteB = Math.abs(numberB);
-
-  if (absoluteA === 0 || absoluteB === 0) {
-    return [1];
+  while (absoluteB) {
+    const temp = absoluteB;
+    absoluteB = absoluteA % absoluteB;
+    absoluteA = temp;
   }
 
-  const cycleLength = Math.max(absoluteA, absoluteB);
-
-  const arr = [];
-  for (let i = 1; i <= cycleLength; i += 1) {
-    if (absoluteA % i === 0 && absoluteB % i === 0) {
-      arr.push(i);
-    }
-  }
-  return getMaxOfArray(arr);
+  return absoluteA;
 };
 
 const createGameData = () => {
@@ -28,14 +20,14 @@ const createGameData = () => {
 
   const question = `${numberA} ${numberB}`;
 
-  const answer = String((commonDivisor(numberA, numberB)));
+  const correctAnswer = String((gcdNumber(numberA, numberB)));
 
-  const gameData = [question, String(answer)];
+  const gameData = [question, String(correctAnswer)];
   return gameData;
 };
 
 const discriptions = 'Find the greatest common divisor of given numbers.';
 
-const startGame = () => mainEngine(discriptions, createGameData);
+const startGame = () => createGameEngine(discriptions, createGameData);
 
 export default startGame;

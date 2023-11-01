@@ -1,8 +1,8 @@
-import mainEngine from '../index.js';
+import createGameEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const numberIsPrime = (number) => {
-  if (number === 1 || number === 0) {
+const isPrimeNumber = (number) => {
+  if (number < 2) {
     return false;
   } if (number > 1) {
     for (let i = 2; i < number; i += 1) {
@@ -16,15 +16,15 @@ const numberIsPrime = (number) => {
 
 const createGameData = () => {
   const question = getRandomNumber(0, 200);
-  const answer = numberIsPrime(question) ? 'yes' : 'no';
+  const correctAnswer = isPrimeNumber(question) ? 'yes' : 'no';
 
-  const gameData = [question, answer];
+  const gameData = [question, correctAnswer];
 
   return gameData;
 };
 
 const discriptions = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const startGame = () => mainEngine(discriptions, createGameData);
+const startGame = () => createGameEngine(discriptions, createGameData);
 
 export default startGame;

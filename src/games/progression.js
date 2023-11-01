@@ -1,4 +1,4 @@
-import mainEngine from '../index.js';
+import createGameEngine from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const generateProgression = (start, step, maxLength) => {
@@ -24,12 +24,12 @@ const createGameData = () => {
   progression[hiddenIndex] = '..';
 
   const question = progression.join(' ');
-  const answer = hiddenValue.toString();
-  const gameData = [question, answer];
+  const correctAnswer = hiddenValue.toString();
+  const gameData = [question, correctAnswer];
   return gameData;
 };
 
 const discriptions = 'What number is missing in the progression?';
 
-const startGame = () => mainEngine(discriptions, createGameData);
+const startGame = () => createGameEngine(discriptions, createGameData);
 export default startGame;
